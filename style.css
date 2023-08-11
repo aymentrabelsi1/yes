@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+text-decoration: none;
+list-style: none;
+
+}
+:root{
+    --primary-color:rgb(149, 148, 148);
+    --second-color:white;
+}
+
+body{height: 100vh;position: fixed;}
+
+
+    nav{height: 100px;
+        
+        background-color: rgb(70, 70, 70);}
+
+    nav ul{float: right;left: -100%;}
+    nav ul li{display: inline-block;
+        background-color: dimgray;
+    border: 1px solid white;border-radius: 50px;
+    padding: 30px;
+    }
+
+    nav ul li a{color: black;font-size: 30px;font-weight: bold;
+    font-family: 'Times New Roman';}
+    nav ul li a:hover{color: var(--second-color);}
+    nav ul li:hover{background-color: orangered;}
+
+    .active{background-color: dimgray;}
+    .logo{font-size: 70px;
+        text-align: center;
+        font-weight: bolder;
+        font-family: cursive;
+        text-transform: capitalize;
+        margin-left: 6%;
+        line-height: 100px;}
+
+        .logo:hover{color: var(--second-color);
+
+        }
+
+        #check{display: none;}
+        .btn{display: none;font-size: 40px;float: right;
+        margin:20px;cursor: pointer;
+        }
+        .btn:hover{color: white;}
+
+
+        #check:checked ~ ul{width: 100%;left: 0;}
+
+@media (max-width:1077px) 
+{
+   nav ul{position: fixed;background-color: black;
+        height: 100vh;width: 100%;
+    }
+   nav ul li{display: block;margin-top: 2%;text-align: center;
+    
+    }    
+    .btn{display: block;}
+}
+
+
+
+/* Add this CSS to your style.css file */
+.my-image-box {
+    width:99.6%;
+    height: 610px;
+}
+
+
+.my-image-box img {border: 1px solid red;
+    width: 100%;border-radius: 0 0 8px 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
